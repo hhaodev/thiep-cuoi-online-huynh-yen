@@ -1,0 +1,723 @@
+/* Reset và Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background: #f8f6f0;
+    line-height: 1.6;
+    color: #4a4a4a;
+    font-style: italic;
+}
+
+.invitation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background: linear-gradient(135deg, #8b7355 0%, #6d5a47 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.hero-content {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.invitation-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.main-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.couple-photo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.couple-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* Couple Section */
+.couple-section {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #f8f6f0 0%, #f0ede6 100%);
+    text-align: center;
+    position: relative;
+}
+
+.couple-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(139, 115, 85, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.wedding-header {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.wedding-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #8b7355;
+    margin-bottom: 15px;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wedding-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #d4af37;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.family-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.family-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #8b7355;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.family-details {
+    text-align: center;
+}
+
+.parent-info {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    color: #6d5a47;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.main-announcement {
+    padding: 40px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.announcement-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    color: #8b7355;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.announcement-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #6d5a47;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.announcement-note {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.couple-names-elegant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 60px 0;
+}
+
+.bride-name,
+.groom-name {
+    text-align: center;
+    border-radius: 20px;
+    min-width: 200px;
+}
+
+.name-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.25rem;
+    color: #d4af37;
+    display: block;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.couple-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    color: #8b7355;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.heart-elegant {
+    font-size: 3rem;
+    color: #d4af37;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.wedding-details {
+    margin-top: 60px;
+    padding: 40px 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.wedding-time {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #8b7355;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.wedding-date {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #6d5a47;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.wedding-date-lunar {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.venue-info {
+    margin: 30px 0;
+    padding: 25px;
+}
+
+.venue-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: #8b7355;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.closing-note {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: #8b7355;
+    font-style: italic;
+    margin-top: 30px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Details Section */
+.details-section {
+    padding: 60px 40px;
+    background: #f8f6f0;
+}
+
+.details-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: #8b7355;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.event-info {
+    display: grid;
+    gap: 30px;
+}
+
+.event-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.event-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+}
+
+.event-details h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #8b7355;
+    margin-bottom: 8px;
+}
+
+.event-details p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.address {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Map Section */
+.map-section {
+    padding: 0px 40px 80px;
+    background: #f8f6f0;
+}
+
+.map-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map-subtitle {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    background: white;
+    padding: 10px;
+}
+
+.map-container iframe {
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.map-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.location-details {
+    flex: 1;
+    text-align: left;
+}
+
+.location-details h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #8b7355;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.location-details p {
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.directions {
+    flex-shrink: 0;
+}
+
+.directions-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #8b7355 0%, #6d5a47 100%);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(139, 115, 85, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.directions-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139, 115, 85, 0.4);
+    background: linear-gradient(135deg, #9d8461 0%, #7a6553 100%);
+}
+
+/* Phone Link Styles */
+.phone-link {
+    color: #8b7355;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.phone-link:hover {
+    color: #6d5a47;
+    border-bottom: 1px solid #8b7355;
+    text-decoration: none;
+}
+
+.phone-link:active {
+    color: #d4af37;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 20px;
+    background: #8b7355;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.couple-section,
+.details-section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        padding-top: 40px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .story-section,
+    .couple-section,
+    .details-section,
+    .map-section {
+        padding: 40px 20px;
+    }
+
+    .wedding-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .family-info {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 400px;
+    }
+
+    .couple-names-elegant {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bride-name,
+    .groom-name {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .heart-elegant {
+        font-size: 2.5rem;
+    }
+
+    .announcement-title {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .couple-name {
+        font-size: 1.7rem;
+    }
+
+    .main-announcement,
+    .wedding-details {
+        padding: 30px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .event-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .event-details {
+        text-align: center;
+    }
+
+    .map-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .location-details {
+        text-align: center;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .phone-link {
+        display: inline-block;
+        padding: 5px 10px;
+        background: rgba(139, 115, 85, 0.1);
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+    .phone-link:hover {
+        background: rgba(139, 115, 85, 0.2);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.75rem;
+        letter-spacing: 1px;
+    }
+
+    .invitation-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .story-text {
+        font-size: 1rem;
+    }
+
+    .wedding-title {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .wedding-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .family-title {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .announcement-title {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .announcement-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .couple-name {
+        font-size: 1.5rem;
+    }
+
+    .name-label {
+        font-size: 1.5rem;
+    }
+
+    .heart-elegant {
+        font-size: 2rem;
+    }
+
+    .bride-name,
+    .groom-name {
+        padding: 20px 15px;
+        min-width: auto;
+    }
+
+    .wedding-details,
+    .main-announcement {
+        padding: 25px 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .wedding-time {
+        font-size: 1.2rem;
+    }
+
+    .wedding-date {
+        font-size: 1.1rem;
+    }
+
+    .venue-info {
+        padding: 20px 15px;
+    }
+
+    .closing-note {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .map-info {
+        padding: 20px;
+    }
+
+    .location-details h4 {
+        font-size: 1.1rem;
+    }
+
+    .directions-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
